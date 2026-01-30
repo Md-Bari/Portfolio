@@ -1,213 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>ML Research Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="SRC/style/style.css">
+    <link rel="icon" href="Assets/favicons/favicon.png" type="image/png" sizes="32x32">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body>
 
-<!-- ===== Navbar ===== -->
-<nav>
-    <h2 class="logo">MyPortfolio</h2>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<!-- Hello -->
+    <header class="header" id="header">
+        <a href="index.html" class="logo"><span class="main-icon"></span><span>Bari</span></a>
 
-<!-- ===== Hero Section =====
-<section id="home" class="hero">
-    <div class="hero-text">
-        <h1>Hi, I'm <span>Md Rofiqul Bari Shitol</span></h1>
-        <p>Specialized in Medical Imaging, Deepl learning & Explainable AI</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </div>
-    <div class="hero-img"> <img src="assets/shitol-removebg-preview.png" alt="Profile"></div>
-   
-</section> -->
+        <div class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="SRC/pages/skills.html">Skills</a>
+            <a href="SRC/pages/education.html">Education</a>
+            <a href="SRC/pages/gallery.html">Gallery</a>
+            <a href="SRC/pages/career.html">Career</a>
+            <a href="SRC/pages/hobbies.html">Hobbies</a>
+            <a href="SRC/pages/testimonials.html">Testimonials</a>
+        </div>
 
-<!-- ===== About ===== -->
-<section id="home" class="hero">
-    <div class="hero-text">
-        <h1>Hi, I'm Md Rofiqul Bari Shitol</h1>
-        <p>Specialized in Medical Imaging, Deep Learning & Explainable AI</p>
-        <a href="#projects" class="btn">View Projects</a>
-    </div>
+        <div class="main">
+            <a href="SRC/pages/contact.html" class="user main-items"><i class="fas fa-envelope cm-icon"></i>Contact
+                Me</a>
+            <div class="main-items menu-icon-container" id="menu-icon-js">
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </div>
+    </header>
 
-    <div class="hero-img">
-        <img src="assets/shitol.png" alt="Profile">
-    </div>
-</section>
+    <div class="page">
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="column right">
+                    <img src="Assets/shitol.jpg" alt="">
+                </div>
+                <div class="column left">
+                    <div class="text">I'm Rofiqul Bari and I'm a <span id="typed" class="iAm"></span></div>
+                    <p>
+                         Web Developer with a deep passion for crafting elegant and user-friendly websites.
+                        With a creative mindset and strong technical skills, I specialize in turning web
+                        ideas into visually stunning and functional realities.
 
+                    </p>
+                    <div class="buttons">
+                        <a href="assets/shitol.pdf" download="MyCV.pdf">Download CV</a>
+                        <a href="SRC/pages/contact.html" class="cm-button">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- ===== Skills ===== -->
-<section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-            <span>Python</span>
-        </div>
-        <div class="skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
-            <span>TensorFlow</span>
-        </div>
-        <div class="skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras">
-            <span>Keras</span>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" alt="CNN">
-            <span>CNN</span>
-        </div>
-        <div class="skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
-            <span>OpenCV</span>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/color/48/000000/heatmap.png" alt="Grad-CAM">
-            <span>Grad-CAM</span>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/color/48/000000/scatter-plot.png" alt="LIME">
-            <span>LIME</span>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/color/48/000000/combo-chart.png" alt="SHAP">
-            <span>SHAP</span>
-        </div>
-    </div>
-</section>
-<!-- ===== Projects ===== -->
- <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <img src="assets/project1.jpg" alt="Project 1">
-            <h3>Monkeypox Detection System</h3>
-            <p>Deep learning model for detecting monkeypox using ensemble CNN architecture with transfer learning.</p>
-            <a href="https://github.com/username/monkeypox-detection" target="_blank" class="github-link">View on GitHub</a>
-        </div>
-        <div class="project-card">
-            <img src="assets/project2.jpg" alt="Project 2">
-            <h3>Melanoma Cancer Detection</h3>
-            <p>Comprehensive AI system for melanoma detection using multiple deep learning approaches.</p>
-            <a href="https://github.com/username/melanoma-detection" target="_blank" class="github-link">View on GitHub</a>
-        </div>
-        <div class="project-card">
-            <img src="assets/project3.jpg" alt="Project 3">
-            <h3>DSNet Breast Cancer Detection</h3>
-            <p>Lightweight CNN architecture for breast cancer detection from histopathological images.</p>
-            <a href="https://github.com/username/dsnet-breast-cancer" target="_blank" class="github-link">View on GitHub</a>
-        </div>
-    </div>
-</section>
-<!-- ===== Research ===== -->
-<section id="research">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>Comparative Analysis of Deep CNN, Transfer Learning, and Proposed Ensemble 
-Architecture for Monkeypox Detection. </h3>
-        <p>
-            Using six pre-trained deep CNN models (VGG19, DenseNet201, InceptionV3, Xception, Resnet152v2, and MobileNetV2) to extract features from images of monkeypox, chickenpox, measles, cowpow, and normal cases.
-        </p>
-        <p>
-            Also used six transfer learning models (VGG19, DenseNet201, InceptionV3, Xception, Resnet152v2, and MobileNetV2) to classify the images into five categories: monkeypox, chickenpox, measles, cowpox, and normal cases.
-        </p>
-        <p>and used a ensemble architecture to combine three models for improved accuracy.</p>
-        <span>Tech: Python, TensorFlow, SOTA CNN</span>
+        <footer class="footer">
+            <div class="left">
+                &copy; 2023 • R. Charlox • All Rights Reserved
+            </div>
+            <div class="right">
+                <div class="social"><a href="https://www.facebook.com/rafiqul.shitol.9" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a></div>
+                <div class="social"><a href="https://www.instagram.com/ritoncharlox" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="social"><a href="https://www.linkedin.com/in/ritoncharlox" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div class="social"><a href="https://github.com/Md-Bari" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+            </div>
+        </footer>
     </div>
 
-    <div class="project-card">
-        <h3>A comprehensive melanoma cancer detection using Deep learning, Transfer learning, and 
-an Ensemble model.</h3>
-        <p>
-            Using six pre-trained deep CNN models (VGG19, DenseNet201, InceptionV3, Xception, Resnet152v2, and MobileNetV2) to extract features from images of monkeypox, chickenpox, measles, cowpow, and normal cases.
-        </p>
-        <p>
-            Also used six transfer learning models (VGG19, DenseNet201, InceptionV3, Xception, Resnet152v2, and MobileNetV2) to classify the images into five categories: monkeypox, chickenpox, measles, cowpox, and normal cases.
-        </p>
-        <p>and used a ensemble architecture to combine three models for improved accuracy.</p>
-        <span>Tech: Python, TensorFlow, SOTA CNN</span>
-    </div>
-    <div class="project-card">
-        <h3>DSNet: A Lightweight CNN architecture for detecting Breast Cancer from histopathological image data. </h3>
-        <p>
-            Using five pre-trained deep CNN models (VGG19, DenseNet201, InceptionV3, Xception, Resnet50v2, and MobileNetV2) to extract features from images of monkeypox, chickenpox, measles, cowpow, and normal cases.
-        </p>
-        <p>and  a fully customized CNN architecture for improved accuracy.</p>
-        <span>Tech: Python, TensorFlow, SOTA CNN</span>
-    </div>
-</section>
+    <div class="nav-touch-close" id="nav-tc-js"></div>
 
-<!-- ===== Certifications ===== -->
-<section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certifications-grid">
-        <div class="certification-card">
-            <div class="cert-icon">🏆</div>
-            <h3>Deep Learning Specialization</h3>
-            <p>Coursera - Andrew Ng</p>
-            <span class="cert-date">2023</span>
-        </div>
-        <div class="certification-card">
-            <div class="cert-icon">📊</div>
-            <h3>Machine Learning with Python</h3>
-            <p>Coursera - University of Michigan</p>
-            <span class="cert-date">2023</span>
-        </div>
-        <div class="certification-card">
-            <div class="cert-icon">🧠</div>
-            <h3>TensorFlow Developer Certificate</h3>
-            <p>Google</p>
-            <span class="cert-date">2024</span>
-        </div>
-        <div class="certification-card">
-            <div class="cert-icon">🔬</div>
-            <h3>Medical Imaging with Deep Learning</h3>
-            <p>Stanford Online</p>
-            <span class="cert-date">2024</span>
-        </div>
-        <div class="certification-card">
-            <div class="cert-icon">📈</div>
-            <h3>Data Science Professional Certificate</h3>
-            <p>IBM</p>
-            <span class="cert-date">2023</span>
-        </div>
-        <div class="certification-card">
-            <div class="cert-icon">🤖</div>
-            <h3>AI Ethics and Responsible AI</h3>
-            <p>Microsoft</p>
-            <span class="cert-date">2024</span>
-        </div>
-    </div>
-</section>
+    <script type="text/javascript" src="SRC/script/script.js"></script>
 
-<!-- ===== Contact ===== -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-</form>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Graphic Designer', 'Video Editor', 'Web Developer'],
+            typeSpeed: 55,
+        });
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-</section>
-
-<footer>
-    <p>© 2026 | ML Research Portfolio</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
+
 </html>
